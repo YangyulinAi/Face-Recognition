@@ -9,6 +9,6 @@ Everyone from the group can upload and edit their code:
 
 ## The folder structure of this project as following:
 - [ ] CNN sub-folder: For face recognition model based on convolutional neural network (is assigned to Yangyulin Ai and Qianqian Sun)
-- [ ] Eigenface sub-folder: For the Eigenface Approach (is assigned to Yiming Chen)
+- [×] Eigenface sub-folder: For the Eigenface Approach (is assigned to Yiming Chen)
 - [ ] Fisherface sub-folder: The Fisherface Approach (is assigned to Jieying Dong)
 - [ ] LBP sub-folder: The LBP Approach (is assigned to Wanrou Huang)
