@@ -81,3 +81,15 @@ overall_recall = mean(recall);
 % Calculate f1_score
 f1_score = 2 * ((overall_precision * overall_recall)/(overall_precision + overall_recall));
 
+% Calculate Kappa
+diag_sum = sum(diagonal);
+total = sum(cmtp, "all");
+p0 = diag_sum / total;
+[irow, ~] = size(diagonal);
+sum_all_diag = 0;
+for i = 1:irow
+   sum_diag = sum(cmtp(:, i))*sum(cmtp(i, :));
+   sum_all_diag = sum_all_diag + sum_diag;
+end
+pe = sum_all_diag / (total*total);
+k = (p0 - pe)/(1-pe);
